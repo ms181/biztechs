@@ -39,13 +39,8 @@ const Contact = () => {
         }
       );
 
-      console.log(response.data); // Response data
-
-      if (response.status === 200) {
-        e.target.reset();
-      } else {
-        console.error(response.data); // Error message
-      }
+      alert(response.data);
+      window.location.href = "/";
     } catch (error) {
       console.error(error);
     }
