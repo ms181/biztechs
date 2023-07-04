@@ -2,7 +2,7 @@ import image from "../../assets/images/banner.jpg";
 import { ArrowRight } from "../../assets/Icons";
 const Banner = () => {
   return (
-    <div className="relative Banner w-full md:h-80 p-16 bg-gradient-to-r from-black to-gray-950 overflow-hidden px-20 flex items-center justify-between">
+    <div className="relative Banner w-full md:h-80 py-16 bg-gradient-to-r from-black to-gray-950 overflow-hidden px-8 md:px-20 flex items-center justify-between">
       <img
         src={image}
         alt=""

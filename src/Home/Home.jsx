@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <div className="Home">
       <Hero />
-      <div className="px-20">
+      <div className="px-8 md:px-20">
         <Introduction />
         <About />
       </div>
       <Banner />
-      <div className="px-20">
+      <div className="px-8 md:px-20">
         <Competencies />
       </div>
     </div>
