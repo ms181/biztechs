@@ -83,7 +83,14 @@ function App() {
   return (
     <div className="overflow-x-hidden w-screen h-auto relative">
       {loading ? (
-        <>Loading...</>
+        <div className="flex items-center justify-center w-screen h-screen">
+          <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+          </div>
+        </div>
       ) : (
         <BrowserRouter>
           <Navbar
