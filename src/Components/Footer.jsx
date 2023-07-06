@@ -14,12 +14,15 @@ const Footer = () => {
             customized business solutions, mobile and web application
             development, and expert business consulting.
           </p>
-          <a
-            href="#"
+          <Link
+            to="/contact"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
             className="pl-6 pr-4 py-2 bg-rose-600 hover:bg-gray-800 rounded-md text-white inline-flex gap-1 items-center"
           >
             Contact <ArrowRight className="h-4" />
-          </a>
+          </Link>
         </div>
         <div className="links w-full lg:w-1/2 flex flex-col sm:flex-row lg:justify-center gap-12 sm:gap-20">
           <div className="group">
