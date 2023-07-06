@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png";
 import { ArrowRight, Map, MapPin, Mail, Phone } from "../assets/Icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -56,16 +57,44 @@ const Footer = () => {
             <h4 className="text-xl text-gray-800 font-bold">Sitemap</h4>
             <ul className="space-y-4 py-6">
               <li className="text-gray-800 text-sm hover:underline">
-                <a href="#">Home</a>
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  to="/"
+                >
+                  Home
+                </Link>
               </li>
               <li className="text-gray-800 text-sm hover:underline">
-                <a href="#">About Us</a>
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  to="/about"
+                >
+                  About Us
+                </Link>
               </li>
               <li className="text-gray-800 text-sm hover:underline">
-                <a href="#">Portfolio</a>
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  href="/portfolio"
+                >
+                  Portfolio
+                </Link>
               </li>
               <li className="text-gray-800 text-sm hover:underline">
-                <a href="#">Contact Us</a>
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  href="/contact"
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>

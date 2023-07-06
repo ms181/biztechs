@@ -4,6 +4,7 @@ import image3 from "../../assets/images/hero/3.jpg";
 import image4 from "../../assets/images/hero/4.jpg";
 
 import { Phone } from "../../assets/Icons";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -33,18 +34,24 @@ const Hero = () => {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          <a
-            href="#"
+          <Link
+            to="/portfolio"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
             className="px-6 py-2 border border-gray-600 hover:border-gray-800 bg-transparent hover:bg-gray-800 rounded-md text-gray-600 hover:text-white"
           >
             Check Portfolio
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/contact"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
             className="pl-6 pr-4 py-2 border border-rose-600 hover:border-gray-800 bg-rose-600 hover:bg-gray-800 rounded-md text-white flex gap-1 items-center"
           >
             Contact Now <Phone className="h-4" />
-          </a>
+          </Link>
         </div>
       </div>
       {/* Images */}

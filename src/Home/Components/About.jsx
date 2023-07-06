@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import image from "../../assets/images/about.png";
 
 const About = () => {
@@ -31,12 +32,15 @@ const About = () => {
           desktop and windows app includes Java, .net, Android Apps, to name a
           few.
         </p>
-        <a
-          href="#"
+        <Link
+          to="/about"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
           className="px-6 py-2 bg-rose-600 hover:bg-gray-800 rounded-md text-white"
         >
           Learn More
-        </a>
+        </Link>
       </div>
       <img
         src={image}

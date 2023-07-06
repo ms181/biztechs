@@ -1,5 +1,6 @@
 import image from "../../assets/images/banner.jpg";
 import { ArrowRight } from "../../assets/Icons";
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="relative Banner w-full md:h-80 py-16 bg-gradient-to-r from-black to-gray-950 overflow-hidden px-8 md:px-20 flex items-center justify-between">
@@ -19,8 +20,11 @@ const Banner = () => {
           </span>{" "}
           Of Experience
         </h2>
-        <a
-          href="#"
+        <Link
+          to="/portfolio"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
           className="text-2xl font-bold tracking-tighter text-white"
           data-aos="fade-up"
         >
@@ -31,7 +35,7 @@ const Banner = () => {
           <span className="flex items-center gap-4">
             Projects Completed <ArrowRight />
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   );
