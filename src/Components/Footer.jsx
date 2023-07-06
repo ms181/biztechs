@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bottom grid place-items-center text-gray-800 py-4 border-t border-gray-300">
+      <div className="bottom grid place-items-center text-gray-800 py-4 border-t border-gray-300 px-8">
         Copyright © 2023 Biztechs | All Rights Reserved.
       </div>
     </div>
